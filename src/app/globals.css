@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --color-header-middle-bg: #009688;
+  --color-header-middle-text: #ffffff;
+  --color-header-top-bg: #00897b;
+  --color-header-top-text: #b2dfdb;
+  --color-chrome-toolbar: #00897b;
+  --color-content-bg: #ffffff;
+  --color-content-bg-alt: #f2f4f5;
+  --color-content-border: #dadfe0;
+  --color-content-heading: #212121;
+  --color-content-text: #3f4544;
+  --color-content-primary: #00bfa5;
+  --color-content-secondary: #2196f3;
+  --color-content-link: #00bfa5;
+  --color-content-link-hover: #2196f3;
+  --color-subfooter-border: #2d3837;
+  --color-footer-bg: #141a19;
+  --color-footer-bg-alt: #1d2625;
+  --color-footer-border: #26302f;
+  --color-footer-text: #7f8a88;
+  --color-footer-heading: #7f8a88;
+  --color-footer-link: #b2bfbe;
+  --color-footer-link-hover: #2196f3;
+  --color-subfooter-bg: #1d2625;
+  --site-content-width: 1140px;
+}
+
+@theme inline {
+  --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-content-bg-alt);
+  color: var(--color-content-text);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.flip-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .group:hover .flip-inner,
+  .group:focus-within .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
