@@ -9,6 +9,7 @@ import { MousSection } from "@/components/sections/MousSection";
 import { PartnersCarousel } from "@/components/sections/PartnersCarousel";
 import { ServiceFlipGrid } from "@/components/sections/ServiceFlipGrid";
 import { StatsSection } from "@/components/sections/StatsSection";
+import { HomeEventsSection } from "@/components/sections/HomeEventsSection";
 import { WelcomeLeadership } from "@/components/sections/WelcomeLeadership";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <main id="page-content" className="flex-1">
         <HeroSlider />
         <WelcomeLeadership />
+        <HomeEventsSection />
         <GrowthBanner />
         <ServiceFlipGrid />
         <MousSection />

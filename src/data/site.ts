@@ -142,9 +142,9 @@ export const LEADERSHIP: LeadershipMember[] = [
     image: "/images/senior-vice-president.png",
   },
   {
-    image: "/images/meeting-j-kim-islamabad.png",
-    description:
-      "Meeting with Mr. J Kim Economic Officer United States of America in Islamabad",
+    name: "Muhammad Aun Raza",
+    role: "Patron in chief",
+    image: "/images/mr-j-kim-portrait.png",
   },
 ];
 
@@ -181,6 +181,7 @@ export const EVENTS: ChamberEvent[] = [
     layout: "wide",
     width: 1024,
     height: 652,
+    objectFit: "contain",
   },
   {
     image: "/images/chamber-formal-event.png",

@@ -9,7 +9,7 @@ export function LeadershipCard({ person }: { person: LeadershipMember }) {
       <div
         className={
           isCaptionCard
-            ? "relative mb-4 aspect-[4/3] w-full max-w-[min(360px,85vw)] overflow-hidden rounded-sm"
+            ? "relative mb-4 aspect-[270/300] w-[min(270px,85vw)] overflow-hidden rounded-sm"
             : "relative mb-4 aspect-[270/300] w-[min(270px,85vw)] overflow-hidden rounded-sm"
         }
       >
@@ -22,7 +22,7 @@ export function LeadershipCard({ person }: { person: LeadershipMember }) {
           sizes={isCaptionCard ? "360px" : "270px"}
           className={
             isCaptionCard
-              ? "object-cover object-center"
+              ? "object-contain object-center"
               : "object-cover object-top"
           }
         />
